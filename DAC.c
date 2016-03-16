@@ -8,7 +8,7 @@
 
 void DAC_Init(void) {
 	P4SEL0 &= ~0x0f;
-	P4SEL1 &= ~0x0f;		// configure P4.0 - P4.4 as GPIO
+	P4SEL1 &= ~0x0f;		// configure P4.0 - P4.3 as GPIO
 	
 	P4DIR |= 0x0f;			// make P4 out
 }
